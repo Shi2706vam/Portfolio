@@ -10,7 +10,7 @@ const projects = [
         title: "Zentry Website UI Clone",
         description: "Created a Zentry website UI clone using React, Tailwind CSS, and Framer Motion",
         image: zentry,
-        url: "#",
+        url: "https://zentry-two-tau.vercel.app/",
         tags: ["React JS", "Tailwind CSS", "Framer Motion"]
     },
     {
@@ -26,7 +26,7 @@ const projects = [
         title: "Valorant Media UI Clone",
         description: "Created a Valorant Media website UI clone using React JS and Tailwind CSS",
         image: valo,
-        url: "#",
+        url: "https://shi2706vam.github.io/valorantMediaUI/",
         tags: ["React JS", "Tailwind CSS"]
     },
     {
