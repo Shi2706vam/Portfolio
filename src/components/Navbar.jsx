@@ -20,7 +20,7 @@ const Navbar = ({isDarkMode, scrolling, setScrolling}) => {
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  });
+  },[]);
 
   return (
     <nav
@@ -53,15 +53,14 @@ const Navbar = ({isDarkMode, scrolling, setScrolling}) => {
 
         <button
           onClick={() => setIsOpenMenu((prev) => !prev)}
-          className={`md:hidden fixed top-4 right-12 p-2 z-50 text-foreground ${
-            isDarkMode ? "text-white" : "text-black"}`}
+          className={`md:hidden fixed top-4 right-12 p-2 z-50 text-foreground ${isDarkMode ? "text-white" : "text-black"}`}
           aria-label={isOpenMenu ? "Colse Menu" : "Open Menu"}
         >
           {isOpenMenu ? <X size={24} /> : <Menu size={24} />}
         </button>
         <div
           className={cn(
-            "fixed inset-0 bg-background/95 background-blur-md z-40 flex flex-col items-center justify-center",
+            "fixed w-full left-0 top-0 h-[100vh] bg-background/90 background-blur-md z-40 flex flex-col items-center justify-center",
             "transition-all duration-300 md:hidden",
             isOpenMenu
               ? "opacity-100 pointer-event-auto"
