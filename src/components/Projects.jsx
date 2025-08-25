@@ -18,7 +18,7 @@ const projects = [
         title: "E-Commerce Website",
         description: "Created a E-Commerce website using React, Tailwind CSS, and AOS animation",
         image: ecom,
-        url: "#",
+        url: "https://shop-me-olive.vercel.app/",
         tags: ["React JS", "Tailwind CSS", "AOS animation"]
     },
     {
