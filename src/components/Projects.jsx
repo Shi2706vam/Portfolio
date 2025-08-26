@@ -27,7 +27,7 @@ const projects = [
         description: "Created a Valorant Media website UI clone using React JS and Tailwind CSS",
         image: valo,
         url: "https://shi2706vam.github.io/valorantMediaUI/",
-        tags: ["React JS", "Tailwind CSS"]
+        tags: ["React JS", "Tailwind CSS", "Swiper JS"]
     },
     {
         id: 4,
