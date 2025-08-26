@@ -68,7 +68,7 @@ const Contact = ({isDarkMode}) => {
                             <label htmlFor="message" className={`block text-m font-medium mb-2 ${isDarkMode? "text-white": "text-black"}`}>Your Message</label>
                             <textarea type="text" name="message" id="message" className={`${isDarkMode? "text-white": "text-black"} w-full px-4 py-3 rounded-md border border-input bg-background focuse:outline-hidden focuse:ring-2 focus:ring-primary `} required placeholder="Your message" />
                         </div>
-                        <button  type="submit" className="px-6 py-2 rounded-full bg-primary text-primary-foreground font-medium transition-all duration-300 hover:shaow-[0_0_10px_rgba(139,93,246,0.5)] hover:scale-10s active:scale-95"><Send size={16}/></button>
+                        <button  type="submit" className={`text-white text-m px-6 py-2 rounded-full bg-primary text-primary-foreground font-medium transition-all duration-300 hover:shaow-[0_0_10px_rgba(139,93,246,0.5)] hover:scale-10s active:scale-95`}>SEND<Send size={16}/></button>
                     </form>
                 </div>
             </div>
