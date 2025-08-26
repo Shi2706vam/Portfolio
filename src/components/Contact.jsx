@@ -3,7 +3,7 @@ import {cn} from "../lib/utils.js"
 
 const Contact = ({isDarkMode}) => {
     return <section id="contact" className="py-24 px-2 relative">
-        <div className="container m-auto max-w-2xl">
+        <div className="container m-auto max-w-4xl">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center text-secondary">
                 Get In <span className="text-primary">Touch</span>
             </h2>
@@ -68,7 +68,7 @@ const Contact = ({isDarkMode}) => {
                             <label htmlFor="message" className={`block text-m font-medium mb-2 ${isDarkMode? "text-white": "text-black"}`}>Your Message</label>
                             <textarea type="text" name="message" id="message" className={`${isDarkMode? "text-white": "text-black"} w-full px-4 py-3 rounded-md border border-input bg-background focuse:outline-hidden focuse:ring-2 focus:ring-primary `} required placeholder="Your message" />
                         </div>
-                        <button  type="submit" className={`text-white text-m px-6 py-2 rounded-full bg-primary text-primary-foreground font-medium transition-all duration-300 hover:shaow-[0_0_10px_rgba(139,93,246,0.5)] hover:scale-10s active:scale-95`}>SEND<Send size={16}/></button>
+                        <button  type="submit" className={`text-white m-auto cursor-pointer text-m flex items-center justify-center gap-1.5 px-6 py-2 rounded-full bg-primary text-primary-foreground font-medium transition-all duration-300 hover:shaow-[0_0_10px_rgba(139,93,246,0.5)] hover:scale-1s active:scale-95`}>SEND<Send size={16}/></button>
                     </form>
                 </div>
             </div>
