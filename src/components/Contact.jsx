@@ -41,13 +41,13 @@ const Contact = ({isDarkMode}) => {
                       <div className={`pt-8 ${isDarkMode ? "text-white" : "text-black"}`}>
                         <h4 className="font-semibold mb-4">Contact with Me</h4>
                         <div className="flex space-x-4 justify-center">
-                            <a  href="#" target="_blank"> 
+                            <a  href="https://www.linkedin.com/in/shivam-kumar-7a34a81b9" target="_blank"> 
                                 <Linkedin/>
                             </a>
-                            <a href="#" target="_blank">
+                            <a href="https://github.com/Shi2706vam" target="_blank">
                                 <Github />
                             </a>
-                            <a href="#" target="_blank">
+                            <a href="https://instagram.com/shivamroy2706" target="_blank">
                                 <Instagram/>
                             </a>
                         </div>
