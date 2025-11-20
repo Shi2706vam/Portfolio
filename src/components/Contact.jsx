@@ -6,21 +6,11 @@ import {
   PhoneCall,
   Send,
 } from "lucide-react";
-<<<<<<< HEAD
 import toast from "react-hot-toast";
-// import Swal from 'sweetalert2';
-=======
-// import Swal from 'sweetalert2';
-import toast from "react-hot-toast";
->>>>>>> 31da5a64b8a76818e13ff23d77f7093f4bd8fa98
 import { cn } from "../lib/utils.js";
 
 const Contact = ({ isDarkMode }) => {
 
-<<<<<<< HEAD
-=======
-  // const Swal = require('sweetalert2');
->>>>>>> 31da5a64b8a76818e13ff23d77f7093f4bd8fa98
   const onSubmit = async (event) => {
     event.preventDefault();
     const formData = new FormData(event.target);
@@ -39,11 +29,7 @@ const Contact = ({ isDarkMode }) => {
       toast.success("Thanks for contacting me. I will get back to you soon.");
     } else {
       console.log("Error", data);
-<<<<<<< HEAD
       toast.error(data.message || "Something went wrong");
-=======
-       toast.error(data.message || "Something went wrong");
->>>>>>> 31da5a64b8a76818e13ff23d77f7093f4bd8fa98
     }
   };
 
