@@ -6,7 +6,8 @@ import {
   PhoneCall,
   Send,
 } from "lucide-react";
-import Swal from 'sweetalert2'
+import toast from "react-hot-toast";
+// import Swal from 'sweetalert2';
 import { cn } from "../lib/utils.js";
 
 const Contact = ({ isDarkMode }) => {
@@ -26,46 +27,10 @@ const Contact = ({ isDarkMode }) => {
 
     if (data.success) {
       event.target.reset();
-      Swal.fire({
-        title: "Amazing!",
-        text: "Message Sent",
-        icon: "success",
-        showClass: {
-          popup: `
-            animate__animated
-            animate__fadeInUp
-            animate__faster
-          `
-        },
-        hideClass: {
-          popup: `
-            animate__animated
-            animate__fadeOutDown
-            animate__faster
-          `
-        }
-      });
+      toast.success("Thanks for contacting me. I will get back to you soon.");
     } else {
       console.log("Error", data);
-       Swal.fire({
-        icon: "error",
-        title: "Oops...",
-        text: "Something went wrong!",
-        showClass: {
-          popup: `
-            animate__animated
-            animate__fadeInUp
-            animate__faster
-          `
-        },
-        hideClass: {
-          popup: `
-            animate__animated
-            animate__fadeOutDown
-            animate__faster
-          `
-        }
-      });
+      toast.error(data.message || "Something went wrong");
     }
   };
 
@@ -167,7 +132,7 @@ const Contact = ({ isDarkMode }) => {
                   id="name"
                   className={`${
                     isDarkMode ? "text-white" : "text-black"
-                  } w-full px-4 py-3 rounded-md border border-input bg-background focuse:outline-hidden focuse:ring-2 focus:ring-primary `}
+                  } w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary `}
                   required
                   placeholder="Full Name"
                 />
@@ -187,7 +152,7 @@ const Contact = ({ isDarkMode }) => {
                   id="email"
                   className={`${
                     isDarkMode ? "text-white" : "text-black"
-                  } w-full px-4 py-3 rounded-md border border-input bg-background focuse:outline-hidden focuse:ring-2 focus:ring-primary `}
+                  } w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary `}
                   required
                   placeholder="test@example.com"
                 />
@@ -207,7 +172,7 @@ const Contact = ({ isDarkMode }) => {
                   id="message"
                   className={`${
                     isDarkMode ? "text-white" : "text-black"
-                  } w-full px-4 py-3 rounded-md border border-input bg-background focuse:outline-hidden focuse:ring-2 focus:ring-primary `}
+                  } w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary `}
                   required
                   placeholder="Your message"
                 />
