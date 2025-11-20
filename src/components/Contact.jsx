@@ -6,11 +6,12 @@ import {
   PhoneCall,
   Send,
 } from "lucide-react";
-import Swal from 'sweetalert2'
+import Swal from 'sweetalert2';
 import { cn } from "../lib/utils.js";
 
 const Contact = ({ isDarkMode }) => {
 
+  const Swal = require('sweetalert2');
   const onSubmit = async (event) => {
     event.preventDefault();
     const formData = new FormData(event.target);
