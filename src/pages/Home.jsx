@@ -8,6 +8,7 @@ import Skills from "../components/Skills";
 import AsideNav from "../components/AsideNav";
 import Contact from "../components/Contact";
 import Projects from "../components/Projects";
+import { Toaster } from "react-hot-toast";
 
 const Home = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -37,6 +38,7 @@ const Home = () => {
         <Projects />
         <Contact isDarkMode={isDarkMode} />
       </main>
+      <Toaster/>
     </div>
   );
 };
